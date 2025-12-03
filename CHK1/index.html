@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Ẩm Thực Việt Nam</title>
+    <!--CSS Templs-->
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" 
+rel="stylesheet">
+
+<!--fontawesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer"/>
+
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" 
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+crossorigin="anonymous">
+
+<!--Main css-->
+<link rel="stylesheet" href="CSS/style.css">
+
+<!-- TEMPLATE TO NEW WEBSITE CLASS CHANGES -->
+    <!--"_band" into "món ăn"
+        "_tour" into "đặt món"
+        "_CarouselTheBand" into "CarouselCacMien"
+        "_Band" into "Mien"
+        "_tour" into "food"
+        "_ticketModal" into "foodModal"
+        "_members-row, _member-item, _member-img" into "food-row, food-item, food-img"
+        "_TourDates" into "DatMon"Ftour
+        "_sold-out" into "hot"
+        "_tickets-list" into "food-list"-->
+
+</head>
+<body>
+<!--Header-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="nav__more">
+                        <a href="#miền-bắc">Món Ăn</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="nav__item">
+                            <a href="#miền-bắc">Miền Bắc</a>
+                            <a href="#miền-trung">Miền Trung</a>
+                            <a href="#miền-nam">Miền Nam</a>
+                        </div>
+                    </li>
+                    <li><a href="#đặt món">Đặt Món</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav__more">
+                        <a href="#">More</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="nav__item">
+                            <a href="#">Khuyến Mãi</a>
+                            <a href="#">Quà Tặng</a>
+                            <a href="#">Media</a>
+                        </div> 
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </header>
+
+<!--Carousel-->
+        <section class="CarouselCacMien">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="Tin-hoc-CK/Bắc/Phở/phở 1.jpg" class="d-block w-100" alt="Phở 1">
+        <div class="carousel-caption">
+            <h5>Miền Bắc</h5>
+            <p>Ai ăn phở không!</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="Tin-hoc-CK/Trung/Bún bò Huế/bún bò 3.jpg" class="d-block w-100" alt="Bún bò 3">
+        <div class="carousel-caption">
+            <h5>Miền Trung</h5>
+            <p>Nổi tiếng với bún bò Huế!</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="Tin-hoc-CK/Nam/Hủ tiếu/hủ tiếu 2.jpg" class="d-block w-100" alt="Hủ tiếu 2">
+        <div class="carousel-caption">
+            <h5>Miền Nam</h5>
+            <p>Ôi thèm hủ tiếu quá!</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+        </section>
+
+    <!--Main info-->
+    <!-- BẮC -->
+        <section id="miền-bắc" class="Mien">
+<div class="content-container">
+        <h2 class="section-heading">MIỀN BẮC</h2>
+        <p class="section-sub-heading"><i>Chả cá Lã Vọng</i></p>
+        <p class="about-text">
+            Chả cá Lã Vọng là món ăn nổi tiếng từ Hà Nội, Chả cá Lã Vọng mang đến trải nghiệm ẩm thực độc đáo với cá lăng ướp gia vị thơm ngon, nướng chín trên bếp than hồng. Cá được phục vụ cùng bún tươi, lạc rang và thì là, tạo nên sự kết hợp hoàn hảo giữa các hương vị và kết cấu. Món ăn này không chỉ ngon mà còn thể hiện sự tinh tế trong ẩm thực Hà Thành.
+        </p>
+
+        <div class="food-row">
+            <div class="food-item">
+                <p>Chả cá 1</p>
+                <img src="Tin-hoc-CK/Bắc/Chả cá Lã Vọng/chả cá 3.jpg" alt="Chả cá 3" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Chả cá 2</p>
+                <img src="Tin-hoc-CK/Bắc/Chả cá Lã Vọng/chả cá 4.jpg" alt="Chả cá 4" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Chả cá 3</p>
+                <img src="Tin-hoc-CK/Bắc/Chả cá Lã Vọng/chả cá 1.jpg" alt="Chả cá 1" class="food-img">
+            </div>
+        </div>
+
+        <p class="section-sub-heading"><i>Phở</i></p>
+        <p class="about-text">
+            Phở là món ăn biểu tượng của ẩm thực Việt Nam, nổi tiếng toàn cầu. Nước dùng trong veo, được ninh từ xương bò hoặc gà, hòa quyện với các loại gia vị như hành, gừng, tạo nên hương vị thơm ngon đặc trưng. Bánh phở dẻo mềm, thường được ăn kèm với thịt bò thái lát mỏng, rau thơm và chanh, mang lại trải nghiệm ẩm thực tuyệt vời cho mọi thực khách.
+        </p>
+
+        <div class="food-row">
+            <div class="food-item">
+                <p>Phở 1</p>
+                <img src="Tin-hoc-CK/Bắc/Phở/phở 1.jpg" alt="Phở 1" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Phở 2</p>
+                <img src="Tin-hoc-CK/Bắc/Phở/phở 2.jpg" alt="Phở 2" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Phở 3</p>
+                <img src="Tin-hoc-CK/Bắc/Phở/phở 4.jpg" alt="Phở 4" class="food-img">
+            </div>
+        </div>
+    </div>
+        </section>
+
+        <!-- TRUNG -->
+        <section id="miền-trung" class="Mien dark-section">
+    <div class="content-container">
+        <h2 class="section-heading">MIỀN TRUNG</h2>
+        <p class="section-sub-heading"><i>Bún bò Huế</i></p>
+        <p class="about-text">
+            Bún bò Huế là một trong những món ăn đặc trưng và nổi tiếng nhất của Huế, bún bò Huế không chỉ gây ấn tượng bởi hương vị đậm đà mà còn bởi màu sắc bắt mắt. Nước dùng được nấu từ xương bò và sả, mang đến hương thơm đặc trưng. Món ăn thường được phục vụ với thịt bò, giò heo và các loại rau sống tươi mát, tạo nên một bữa ăn hoàn hảo cho mọi thực khách.
+        </p>
+
+        <div class="food-row">
+            <div class="food-item">
+                <p>Bún bò 1</p>
+                <img src="Tin-hoc-CK/Trung/Bún bò Huế/bún bò 2.jpg" alt="Bún bò 2" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Bún bò 2</p>
+                <img src="Tin-hoc-CK/Trung/Bún bò Huế/bún bò 4.jpg" alt="Bún bò 4" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Bún bò 3</p>
+                <img src="Tin-hoc-CK/Trung/Bún bò Huế/bún bò 1.jpg" alt="Bún bò 1" class="food-img">
+            </div>
+        </div>
+
+        <p class="section-sub-heading"><i>Bánh Bèo</i></p>
+        <p class="about-text">
+            Bánh bèo là món bánh truyền thống của miền Trung, làm từ bột gạo và có hình tròn nhỏ xinh xắn. Mỗi chiếc bánh được rắc tôm chấy và ăn kèm với nước mắm đậm đà, mang lại vị ngọt ngào và hấp dẫn. Món ăn này không chỉ thơm ngon mà còn thể hiện sự tinh tế trong cách chế biến của người dân miền Trung.
+        </p>
+
+        <div class="food-row">
+            <div class="food-item">
+                <p>Bánh bèo 1</p>
+                <img src="Tin-hoc-CK/Trung/Bánh bèo/bánh bèo 3.jpg" alt="Bánh bèo 3" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Bánh bèo 2</p>
+                <img src="Tin-hoc-CK/Trung/Bánh bèo/bánh bèo 4.jpg" alt="Bánh bèo 4" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Bánh bèo 3</p>
+                <img src="Tin-hoc-CK/Trung/Bánh bèo/bánh bèo 1.jpg" alt="Bánh bèo 1" class="food-img">
+            </div>
+        </div>
+    </div>
+        </section>
+        
+        <!-- NAM -->
+<section id="miền-nam" class="Mien">
+    <div class="content-container">
+        <h2 class="section-heading">MIỀN NAM</h2>
+        <p class="section-sub-heading"><i>Cơm Tấm</i></p>
+        <p class="about-text">
+            Cơm tấm là món ăn phổ biến ở miền Nam, nổi bật với hạt cơm tấm dẻo và sườn nướng thơm lừng. Món ăn thường được phục vụ với trứng ốp la, dưa chuột và nước mắm chua ngọt, tạo nên hương vị đậm đà và ấm áp. Cơm tấm không chỉ là món ăn mà còn là biểu tượng của sự giản dị và phong phú trong ẩm thực miền Nam.
+        </p>
+        <div class="food-row">
+            <div class="food-item">
+                <p>Cơm tấm 1</p>
+                <img src="Tin-hoc-CK/Nam/Cơm tấm/cơm tấm 2.jpg" alt="Cơm tấm 2" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Cơm tấm 2</p>
+                <img src="Tin-hoc-CK/Nam/Cơm tấm/cơm tấm 1.jpg" alt="Cơm tấm 1" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Cơm tấm 3</p>
+                <img src="Tin-hoc-CK/Nam/Cơm tấm/cơm tấm 4.jpg" alt="Cơm tấm 4" class="food-img">
+            </div>
+        </div>
+
+        <p class="section-sub-heading"><i>Hủ Tiếu</i></p>
+        <p class="about-text">
+           Hủ tiếu là món mì nước có nguồn gốc từ người Hoa, thường được phục vụ với nước dùng ngọt thanh và các loại thịt như thịt heo, tôm, hoặc cả hai. Món ăn này mang lại sự phong phú và đa dạng trong hương vị, thường được ăn kèm với rau sống tươi mát và nước tương, tạo nên một bữa ăn hài hòa và hấp dẫn.
+        </p>
+
+        <div class="food-row">
+            <div class="food-item">
+                <p>Hủ tiếu 1</p>
+                <img src="Tin-hoc-CK/Nam/Hủ tiếu/hủ tiếu 1.JPG" alt="Hủ tiếu 1" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Hủ tiếu 2</p>
+                <img src="Tin-hoc-CK/Nam/Hủ tiếu/hủ tiếu 4.jpg" alt="Hủ tiếu 4" class="food-img">
+            </div>
+            <div class="food-item">
+                <p>Hủ tiếu 3</p>
+                <img src="Tin-hoc-CK/Nam/Hủ tiếu/hủ tiếu 3.jpg" alt="Hủ tiếu 3" class="food-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Tour Dates-->
+        <section id="đặt món" class="DatMon">
+<div class="food-section">
+        <div class="content-container">
+            <h2 class="section-heading text-white">MÓN ĂN HÔM NAY</h2>
+            <p class="section-sub-heading text-white"><i>Còn nóng hổi luôn!</i></p>
+            
+            <ul class="food-list">
+                <li>Chả Cá <span class="hot">HOT <i class="fa-solid fa-fire"></i></span></li>
+                <li>Phở <span class="hot">HOT <i class="fa-solid fa-fire"></i></span></li>
+                <li>Bún Bò <span class="hot">HOT <i class="fa-solid fa-fire"></i></span></li>
+                <li>Bánh Bèo <span class="quantity">69</span></li>
+                <li>Cơm Tấm <span class="quantity">6</span></li>
+                <li>Hủ Tiếu <span class="quantity">7</span></li>
+            </ul>
+
+            <div class="places-row">
+                <div class="place-item">
+                    <img src="Tin-hoc-CK/Nam/Hủ tiếu/hủ tiếu 3.jpg" alt="Hủ Tiếu 3" class="place-img">
+                    <div class="place-content">
+                        <p><b>Hủ Tiếu</b></p>
+                        <p class="place-date">Mon 17 Nov 2025</p>
+                        <p>Ăn nhiều không béo, chỉ có vui thôi!</p>
+                        <button class="btn-buy">MUA</button>
+                    </div>
+                </div>
+
+                <div class="place-item">
+                    <img src="Tin-hoc-CK/Nam/Cơm tấm/cơm tấm 3.jpg" alt="Cơm Tấm 3" class="place-img">
+                    <div class="place-content">
+                        <p><b>Cơm Tấm</b></p>
+                        <p class="place-date">Mon 24 Nov 2025</p>
+                        <p>Vào đây ăn, chuyện khác tính sau.</p>
+                        <button class="btn-buy">MUA</button>
+                    </div>
+                </div>
+
+                <div class="place-item">
+                    <img src="Tin-hoc-CK/Trung/Bánh bèo/bánh bèo 2.jpg" alt="Bánh Bèo 2" class="place-img">
+                    <div class="place-content">
+                        <p><b>Bánh Bèo</b></p>
+                        <p class="place-date">Mon 1 Dec 2025</p>
+                        <p>Ăn là phải chất, không ngon hoàn tiền!</p>
+                        <button class="btn-buy">MUA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="foodModal" class="modal">
+        <div class="modal-content">
+            
+            <header class="modal-header">
+                <span class="close-btn">&times;</span>
+                <h2><i class="fa-solid fa-bowl-food"></i> Đặt Món</h2>
+            </header>
+
+            <div class="modal-body">
+                <p>
+                    <label>30k</label>
+                </p>
+                <input type="number" class="modal-input" placeholder="Số lượng?">
+                <p>
+                    <label>Gửi đến</label>
+                </p>
+                <input type="email" class="modal-input" placeholder="Nhập email">
+                <button class="pay-btn">
+                    TRẢ TIỀN <i class="fa fa-check"></i>
+                </button>
+                
+                <p class="modal-footer-text"><a href="#">Cần trợ giúp?</a></p>
+            </div>
+            
+            <footer class="modal-footer">
+                <button class="close-footer-btn">Đóng <i class="fa fa-remove"></i></button>
+            </footer>
+        </div>
+    </div>
+
+    </div>
+        </section>
+       
+     <!--Contact-->
+        <section id="contact" class="Contact">
+    <div class="section-wrapper white-bg">
+    <div class="content-container">
+        <h2 class="section-heading">CONTACT</h2>
+        <p class="section-sub-heading"><i>Hãy gửi cho chúng mình nếu có vấn đề gì!</i></p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p><i class="fa fa-map-marker fa-fw"></i> Hồ Chí Minh, Việt Nam</p>
+                <p><i class="fa fa-phone fa-fw"></i> Phone: +84 XXXXXX</p>
+                <p><i class="fa fa-envelope fa-fw"></i> Email: mail@mail.com</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required class="form-input half-input">
+                <input type="email" placeholder="Email" required class="form-input half-input">
+                <input type="text" placeholder="Message" required class="form-input full-input">
+                <button type="submit" class="send-btn">
+                    GỬI
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+        </section>
+
+    <!--Footer-->
+        <footer class="footer-section">
+            <div class="content-container text-center">
+                <i class="fa-brands fa-facebook-f fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-snapchat fa-2x"></i>
+                <i class="fa-brands fa-pinterest-p fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                <p class="footer-text">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Nhóm 4</a></p>
+            </div>
+        </footer>
+
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
+
+<script>
+            // 1. Get the modal element by its ID
+            var modal = document.getElementById('foodModal');
+
+            // 2. Get all buttons with the class 'btn-buy'
+            var buyBtns = document.querySelectorAll('.btn-buy');
+
+            // 3. Get the elements that close the modal
+            var closeBtn = document.querySelector('.close-btn'); // The 'X' button
+            var closeFooterBtn = document.querySelector('.close-footer-btn'); // 'Đóng' button
+
+            // Function to show the modal (sets display: block)
+            function showBuyTickets() {
+                modal.style.display = 'block';
+            }
+
+            // Function to hide the modal (sets display: none)
+            function hideBuyTickets() {
+                modal.style.display = 'none';
+            }
+
+            // A. Attach the click event to all 'MUA' buttons
+            for (const buyBtn of buyBtns) {
+                buyBtn.addEventListener('click', showBuyTickets);
+            }
+
+            // B. Attach click events to the close buttons
+            closeBtn.addEventListener('click', hideBuyTickets);
+            closeFooterBtn.addEventListener('click', hideBuyTickets);
+
+            // C. Close modal when clicking outside the modal box
+            window.addEventListener('click', function(event) {
+                if (event.target == modal) {
+                    hideBuyTickets();
+                }
+            });
+        </script>
+        
+</body>
+</html>
